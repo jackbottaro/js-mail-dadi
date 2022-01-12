@@ -27,11 +27,19 @@ console.log(userNumber, botNumber);
 
 // Dichiaro varibile e le assegno valore di default
 
-let response = 'Pareggio;'
+let response = 'Pareggio'; 
 
 // Confronto numeri estratti e verico chi vince
 if (userNumber > botNumber){
     response = 'Evviva! Hai battuto il computer';
-} else (userNumber < botNumber){
-    response = 'Dannazione! Il computer ti ha battuto'
+} else if (userNumber < botNumber) {
+    response = 'Cavolo il computer ti ha battuto';
 }
+
+
+// Stampo risulato in pagina
+displayElement.innerHTML= `
+<div>I tuoi dadi hanno fatto ${userNumber}</div>
+<div>Il computer ha fatto ${botNumber}</div>
+<strong>${response}</strong>
+`;
