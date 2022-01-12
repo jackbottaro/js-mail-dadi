@@ -17,6 +17,10 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?
 */
 
 // Prendo dalla pagina l'elemto
-const displayElement = document.getElementById('element')
+const displayElement = document.getElementById('element');
 
 // Genero numeri casuali
+const userNumber = Math.floor(Math.random() * 7);
+const botNumber = Math.floor(Math.random() * 7);
+
+console.log(userNumber, botNumber);
