@@ -24,3 +24,14 @@ const userNumber = Math.floor(Math.random() * 7);
 const botNumber = Math.floor(Math.random() * 7);
 
 console.log(userNumber, botNumber);
+
+// Dichiaro varibile e le assegno valore di default
+
+let response = 'Pareggio;'
+
+// Confronto numeri estratti e verico chi vince
+if (userNumber > botNumber){
+    response = 'Evviva! Hai battuto il computer';
+} else (userNumber < botNumber){
+    response = 'Dannazione! Il computer ti ha battuto'
+}
